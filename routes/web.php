@@ -17,6 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/register', function() {
-    return view ('register');
-});
+Route::get('/register', [\App\Http\Controllers\RegisterController::class,"showRegisterForm"]);
+
