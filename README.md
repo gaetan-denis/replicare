@@ -21,4 +21,4 @@ Afin d’assurer le bon fonctionnement de Replicare, il est primordial de respec
 >
 >DB_PASSWORD=
 
-* Une fois ces réglâges effectuées, saisissez la commande dans votre invite de commande la ligne suivante `php artisan key:generate`
+* Une fois ces réglages effectués, saisissez la commande dans votre invite de commande la ligne suivante `php artisan key:generate`
