@@ -19,3 +19,7 @@ Route::get('/', function () {
 
 Route::get('/register', [\App\Http\Controllers\RegisterController::class,"showRegisterForm"]);
 
+Route::get('/register', function () {
+    return view('register');
+});
+
