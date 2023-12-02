@@ -13,6 +13,7 @@
 <nav>
     <ul>
         <li><a href="{{route('home')}}">Accueil</a></li>
+        <li><a href="{{route('register')}}">S'enregistrer</a></li>
     </ul>
 </nav>
 </body>

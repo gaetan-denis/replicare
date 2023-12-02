@@ -14,5 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [\App\Http\Controllers\HomeController::class,"getHomePage"]) ->name('home');
-
-
+Route::get('/register', [\App\Http\Controllers\RegisterController::class,"getRegisterPage"]) ->name('register');
