@@ -13,13 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [\App\Http\Controllers\HomeController::class,"getHomePage"]) ->name('home');
 
-Route::get('/register', [\App\Http\Controllers\RegisterController::class,"showRegisterForm"]);
-
-Route::get('/register', function () {
-    return view('register');
-});
 
