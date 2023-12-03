@@ -21,6 +21,6 @@ Afin d’assurer le bon fonctionnement de Replicare, il est primordial de respec
 
 >DB_PASSWORD=
 
-* Une fois ces réglages effectués, saisissez la commande suivante dans votre invite de commande : php artisan key:generate
+* Une fois ces réglages effectués, saisissez la commande suivante dans votre invite de commande : `php artisan key:generate`
 
-* Effectuez ensuite la migration de la base de données en utilisant la commande php artisan migrate. Si le nom de votre base de données n'existe pas, un message vous demandera si vous souhaitez la créer. Tapez 'Y' ou 'Yes' pour confirmer la création.
+* Effectuez ensuite la migration de la base de données en utilisant la commande `php artisan migrate`. Si le nom de votre base de données n'existe pas, un message vous demandera si vous souhaitez la créer. Tapez 'Y' ou 'Yes' pour confirmer la création.
