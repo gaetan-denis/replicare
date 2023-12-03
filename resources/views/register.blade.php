@@ -37,6 +37,13 @@
         <p class="error-message">{{ $message }}</p>
         @enderror
 
+        <label for="user_password_confirmation">{{ __('Confirmez le mot de passe') }}</label>
+        <input id="user_password_confirmation" type="password" name="user_password_confirmation" required autocomplete="new-password">
+
+        @error('user_password_confirmation')
+        <p class="error-message">{{ $message }}</p>
+        @enderror
+
         <label for="user_avatar">{{ __('Avatar') }}</label>
         <input id="user_avatar" type="file" name="user_avatar" accept="image/*">
         @error('user_avatar')

@@ -28,7 +28,11 @@ class RegisterController extends Controller
         $request->validate([
             'user_username' => 'required|string|min:3|max:255|unique:users',
             'user_email' => 'required|email|unique:users',
-            'user_password' => 'required|string|min:12',
+
+            /**
+             * L'attribut confirmed garantis la similitude entre les deux mots de passe
+             */
+            'user_password' => 'required|string|min:12|confirmed',
         ]);
 
         // Créer un nouvel utilisateur
