@@ -10,11 +10,13 @@ return [
             'max' => 'Nom d’utilisateur trop long, veuillez diminuer le nombre de caractères pour qu\'il soit inférieur à :min',
             'regex' => 'Le nom d’utilisateur contient un caractère non autorisé, veuillez n’utiliser que les
              caractères spéciaux suivants : ! @ # $ % & ( ) - _ + = { } [ ] | \ : ; \'',
+            'unique' => 'Ce nom d\'utilisateur est déjà utilisé. Veuillez en choisir un autre.',
 
         ],
         'user_email' => [
             'required' => ' Vous devez entrer un nom d’utilisateur valide afin de vous enregistrer',
             'email' => ' Email non valide, veuillez entrer un email valide',
+            'unique' => 'Cette adresse email est déjà utilisée. Veuillez en choisir une autre.',
 
         ],
         'user_password' => [
@@ -26,8 +28,14 @@ return [
         ],
         'user_avatar' => [
 
-            'image' => 'Le fichier doit être une image.',
+            'image' => ' Le fichier que vous avez fourni n’est pas un fichier image, veuillez choisir un fichier image pour enregistrer
+            votre avatar',
 
+            /*
+             *mime va vérifier que les extensions sont bien conformes
+             */
+
+            'mimes' => 'Ce type d’image n’est pas pris en compte par Replicare, veuillez choisir votre image avec les extensions suivantes : :values.',
         ],
     ],
 ];
